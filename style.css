@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:sans-serif;
+    line-height: 1.6;
+    color: #FFB05B;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #002E5D;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+}
+
+.logo h1 {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    font-size: 2rem;
+}
+
+.logo .tagline {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    display: block; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://imgs.search.brave.com/F_Du6WHgkn5tHKuQTjCZH-vX0jQ3m2rpwqh5p3DAqJ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9yZXN0YXVyYW50/LWdsYXNzLXRhYmxl/d2FyZS10YWJsZS1p/bnRlcmlvcl8yMTkx/OTMtOTY3LmpwZz9z/ZW10PWFpc19oeWJy/aWQmdz03NDAmcT04/MA') center/cover no-repeat;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: white;
+}
+
+
+.hero-content h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+
+}
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.btn{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+
+}
+.btn-primary{
+    background-color: #e74c3c;
+    color:white;
+}
+.btn-primary:hover{
+    background-color: #c0392b;
+    transform: translateY(-2px);
+
+}
+.btn-secondary{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+
+}
+.btn-secondary:hover{
+    background-color:#e74c3c;
+    transform: translateY(-2px);
+}
